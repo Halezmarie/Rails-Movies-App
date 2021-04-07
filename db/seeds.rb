@@ -6,8 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-ENV["OMDB_KEY"]
 
-
-response = RestClient.get('')
-binding.pry
+response = RestClient.get("https://www.omdbapi.com/?apikey=#{ENV["OMDB_KEY"]}&")
+#mediumblog to help
