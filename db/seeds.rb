@@ -9,3 +9,6 @@
 
 response = RestClient.get("https://www.omdbapi.com/?apikey=#{ENV["OMDB_KEY"]}&")
 #mediumblog to help
+
+
+
